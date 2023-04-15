@@ -2,7 +2,7 @@ import { NextAuthOptions } from "next-auth";
 import { UpstashRedisAdapter } from "@next-auth/upstash-redis-adapter";
 import GoogleProvider from 'next-auth/providers/google'
 import GithubProvider from 'next-auth/providers/github'
-import {db} from '../lib/db'
+import {db} from './db'
 
 function getGoogleCredentials(){
     const clientId = process.env.GOOGLE_CLIENT_ID
