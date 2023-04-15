@@ -5,7 +5,7 @@ import GithubProvider from 'next-auth/providers/github'
 import {db} from '../lib/db'
 
 function getGoogleCredentials(){
-    const clientId = process.env.GOOGLE_CLIEN_ID
+    const clientId = process.env.GOOGLE_CLIENT_ID
     const clientSecret = process.env.GOOGLE_CLIENT_SECRET
 
     if(!clientId || clientId.length === 0 ) {
